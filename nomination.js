@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('nominationForm');
   const submitBtn = form.querySelector('button[type="submit"]');
-  const game = 'crushgirls';
+  const game = 'crushboys';
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
