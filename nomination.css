@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #1B1B2F 0%, #27293D 100%);
+  color: #E1D9D1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  background: #27293D;
+  padding: 40px 30px;
+  border-radius: 16px;
+  max-width: 420px;
+  width: 90vw;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #C6B7A5;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #A79987;
+  margin-bottom: 28px;
+  font-weight: 400;
+}
+
+#nominationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#nominationForm input[type="text"],
+#nominationForm select {
+  background-color: #1B1B2F;
+  border: 1.5px solid #3A3746;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  color: #E1D9D1;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#nominationForm input[type="text"]::placeholder {
+  color: #7E746C;
+}
+
+#nominationForm input[type="text"]:focus,
+#nominationForm select:focus {
+  border-color: #C6B7A5;
+  box-shadow: 0 0 8px #C6B7A5;
+  background-color: #222338;
+  outline: none;
+}
+
+.select-group {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#nominationForm select {
+  min-width: 130px;
+}
+
+#nominationForm button {
+  background-color: #C6B7A5;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 12px;
+  color: #27293D;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#nominationForm button:hover {
+  background-color: #A79987;
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .select-group {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  #nominationForm select {
+    min-width: 100%;
+  }
+
+  .container {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
