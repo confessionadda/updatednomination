@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nominate Your Friend</title>
+  <link rel="stylesheet" href="nomination.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="firebase.js"></script>
+  <script defer src="nomination.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 Nominate Your Friend</h1>
+    <p class="subtitle">Show appreciation anonymously ✨</p>
+    <form id="nominationForm">
+      <input id="username" type="text" placeholder="@username" required />
+
+      <div class="select-group">
+        <select id="year" required>
+          <option value="" disabled selected>Select Year</option>
+          <option value="FY">FY</option>
+          <option value="SY">SY</option>
+          <option value="TY">TY</option>
+          <option value="BTECH">BTECH</option>
+        </select>
+
+        <select id="branch" required>
+          <option value="" disabled selected>Select Branch</option>
+          <option value="CSE">CSE</option>
+          <option value="IT">IT</option>
+          <option value="ENTC">ENTC</option>
+          <option value="MECH">MECH</option>
+          <option value="ECE">ECE</option>
+          <option value="INSTRU">INSTRU</option>
+          <option value="PROD">PROD</option>
+          <option value="TEXT">TEXT</option>
+          <option value="CHEM">CHEM</option>
+          <option value="CIVIL">CIVIL</option>
+        </select>
+      </div>
+
+      <button type="submit">🚀 Submit Nomination</button>
+    </form>
+  </div>
+  
+</body>
+</html>
